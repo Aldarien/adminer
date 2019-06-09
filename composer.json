@@ -1,0 +1,53 @@
+{
+    "name": "aldarien/adminer",
+    "description": "Adminer version manager",
+    "type": "project",
+    "require": {
+        "slim/slim": "^3.12",
+        "aldarien/path": "@dev",
+        "aldarien/config": "@dev",
+        "aldarien/file-loaders": "@dev",
+        "aldarien/url-getter": "@dev",
+        "aldarien/adminer-version-checker": "@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.2",
+        "zeuxisoo/slim-whoops": "^0.6.5",
+        "kint-php/kint": "^3.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aldarien",
+            "email": "aldarien85@gmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Adminer\\App\\": "app",
+        "Adminer\\": "src"
+      }
+    },
+    "repositories": [
+      {
+        "type": "path",
+        "url": "./modules/Path"
+      },
+      {
+        "type": "path",
+        "url": "./modules/Config"
+      },
+      {
+        "type": "path",
+        "url": "./modules/FileLoaders"
+      },
+      {
+        "type": "path",
+        "url": "./modules/UrlGetter"
+      },
+      {
+        "type": "path",
+        "url": "./modules/VersionChecker"
+      }
+    ]
+}

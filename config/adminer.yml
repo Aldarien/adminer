@@ -1,0 +1,7 @@
+latest:
+  url: https://www.adminer.org/latest.php
+  tag: https://api.github.com/repos/vrana/adminer/releases/latest
+styles:
+  url: https://api.github.com/repos/vrana/adminer/contents/designs
+style:
+  name: pepa-linha
