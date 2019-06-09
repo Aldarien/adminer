@@ -1,0 +1,30 @@
+{
+    "name": "aldarien/config",
+    "description": "Configuration service for different file types",
+    "type": "plugin",
+    "require-dev": {
+        "phpunit/phpunit": "^8.2",
+        "kint-php/kint": "^3.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aldarien",
+            "email": "aldarien85@gmail.com"
+        }
+    ],
+    "require": {
+      "aldarien/file-loaders": "@dev"
+    },
+    "autoload": {
+      "psr-4": {
+        "Aldarien\\App\\": "app"
+      }
+    },
+    "repositories": [
+      {
+        "type": "path",
+        "url": "../FileLoaders"
+      }
+    ]
+}
